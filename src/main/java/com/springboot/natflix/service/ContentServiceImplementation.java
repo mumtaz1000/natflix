@@ -53,4 +53,12 @@ public class ContentServiceImplementation implements ContentService {
                 new ResourceNotFoundException("Content","Id",id));
         contentRepository.deleteById(id);
     }
+
+    @Override
+    public List<Content> searchContent(String query) {
+        List<Content> contents = contentRepository.searchContents(query);
+        return contents;
+    }
+
+
 }

@@ -17,4 +17,5 @@ public interface ContentService {
     Content updateContent(Content content, long id);
 
     void deleteContent(long id);
+    List<Content> searchContent(String query);
 }
