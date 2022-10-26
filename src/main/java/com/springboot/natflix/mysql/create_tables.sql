@@ -1,3 +1,7 @@
+CREATE DATABASE natflix;
+
+USE natflix;
+
 CREATE TABLE content_type
 (
     id              SERIAL PRIMARY KEY,
