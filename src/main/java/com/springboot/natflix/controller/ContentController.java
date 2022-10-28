@@ -15,6 +15,7 @@ public class ContentController {
 
     private ContentService contentService;
 
+
     public ContentController(ContentService contentService) {
         this.contentService = contentService;
     }
@@ -35,17 +36,16 @@ public class ContentController {
         return new ResponseEntity<Content>(contentService.getContentById(contentId), HttpStatus.OK);
     }
 
-    //Build update employee REST API
-    // http://localhost:8080/api/employees/1
+
+    //http://localhost:8080/api/content/1
     @PutMapping("{id}")
     public ResponseEntity<Content> updateContent(@PathVariable("id") long id,
                                                  @RequestBody Content content) {
         return new ResponseEntity<Content>(contentService.updateContent(content, id), HttpStatus.OK);
     }
 
-    //Build delete employee REST API
 
-    // http://localhost:8080/api/employees/1
+    // http://localhost:8080/api/content/1
     @DeleteMapping("{id}")
     public ResponseEntity<String> deleteContent(@PathVariable("id") long id) {
 
