@@ -11,6 +11,7 @@
     <groupId>com.springboot</groupId>
     <artifactId>natflix</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>natflix</name>
     <description>Natflix project for novare potential</description>
     <properties>
